@@ -1,0 +1,9 @@
+User Authentication
+Spotify API
+Responsive UI Design
+Material UI (Icons)
+React Context API (Like REDUX)
+
+Reduce((initial,item) => {})
+
+npm i spotify-web-api-js
