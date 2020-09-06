@@ -7,3 +7,17 @@ React Context API (Like REDUX)
 Reduce((initial,item) => {})
 
 npm i spotify-web-api-js
+
+avoid problem: prop drilling 
+(ex. app.player.sidebar.song, if we want to access song, we have to
+pass through app, player, sidebar )
+
+avoid tightly-coupled code 
+
+change in one area should not break codes in other areas
+
+React CONTEXT (User-friendly REDUX) and REDUX API help fix the prop drilling
+
+data layer - ecommerce website
+
+ 
