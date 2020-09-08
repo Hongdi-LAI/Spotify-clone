@@ -6,7 +6,6 @@ export const initialState = {
     //debugging purpose, set the token to already authenticated one
     //REMOVE after debugging and CHANGE to null
     //token: 'BQAH-0NNlko7g3yjDSjxJNkOnr21xxG_Lisnq6T-47WrBvjdc1…Tce0s2ubS7epVmrpe7ptUvpH5uB6megAq6StuMUrjZtCDbemQ',
-    token: null,
 };
 
 // it takes the state of data layer (how it currently looks) and 

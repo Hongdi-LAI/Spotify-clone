@@ -25,7 +25,7 @@ function App() {
       const hash = getTokenFromUrl();
       // clear token history
       // url will become: "http://localhost:3000/#"
-      window.location.hash = "";
+      // window.location.hash = "";
       //temp token
       const _token = hash.access_token;
 
@@ -65,8 +65,8 @@ function App() {
       }
     },[]);
 
-    console.log("granny", user);
-    console.log("discover weekly", discover_weekly);
+    //console.log("granny", user);
+    //console.log("discover weekly", discover_weekly);
   
   return (
 
