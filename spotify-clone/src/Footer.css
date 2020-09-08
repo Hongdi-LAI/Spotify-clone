@@ -26,6 +26,7 @@
 
 .footer__center {
     flex:0.4;
+    /* padding: x x x x means top right bottom and left */
     padding: 0 100px;
     color: white;
     display: flex;
@@ -40,4 +41,28 @@
     justify-content: space-between;
     align-items: center;
     color:white;
+}
+
+.footer__icon:hover,
+.footer__green:hover {
+    /* 0.2s (200ms) delay */
+    transition: transform 0.2s ease-in-out;
+    /* icon scale up to 1.2 */
+    transform: scale(1.2) !important;
+}
+
+.footer__right *.MuiSlider-root {
+    color: green;
+}
+
+.footer__songInfo > h4 {
+    margin-bottom: 5px;
+}
+
+.footer__songInfo > p {
+    font-size: 12px;
+}
+
+.footer__green {
+    color: #1ed15e;
 }
