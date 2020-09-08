@@ -20,4 +20,10 @@ React CONTEXT (User-friendly REDUX) and REDUX API help fix the prop drilling
 
 data layer - ecommerce website
 
+createContext, useContext, useReducer
+
+state Management API (Context, Redux)
+
+material UI Grid?
+
  

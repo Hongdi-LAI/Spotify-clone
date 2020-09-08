@@ -1,3 +1,8 @@
+/* hide scroll bar */
+body::-webkit-scrollbar{
+  display: none;
+}
+
 /*clearing out the default margin*/
 * {
   margin: 0;

@@ -32,6 +32,12 @@ const reducer = (state, action) => {
                 token: action.token
             }
 
+        case 'SET_PLAYLISTS':
+            return {
+                ...state,
+                playlists: action.playlists
+            }
+
         // when there are unrecognised/ unlistened cases
         // returns default so it wont be broken
         default: 
