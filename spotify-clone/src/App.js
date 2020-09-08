@@ -13,7 +13,7 @@ function App() {
       
     // const [token, setToken] = useState(null);
     // deconstruct the datalayer to get the user instead of doing DataLayer.user
-    const [{user, token},dispatch] = useDataLayerValue();
+    const [{user, token, discover_weekly},dispatch] = useDataLayerValue();
 
 
     // Run code based on a given condition
@@ -41,7 +41,6 @@ function App() {
         //giving the token to Spotify API
         spotify.setAccessToken(_token);
         spotify.getMe().then(user => {
-
           dispatch({
             type: 'SET_USER',
             // in ES6 can just use 'user' instead of 'user: user'
@@ -55,11 +54,19 @@ function App() {
             playlists: playlists,
           });
         });
+
+        spotify.getPlaylist('37i9dQZEVXcIrudi49hDJg').then((response) => 
+          dispatch({
+            type: "SET_DISCOVER_WEEKLY",
+            discover_weekly: response,
+          })
+        );
+
       }
     },[]);
 
     console.log("granny", user);
-    console.log("I have a token", token);
+    console.log("discover weekly", discover_weekly);
   
   return (
 
