@@ -8,7 +8,7 @@ All code can be found in the 'src' directory.
 
 ### App Functionality
 
-  1. User Authentication
+  1. User Authentication through Spotify Web Developer Options
   2. Spotify API Integration
   3. Interactive and Responsive UI Design
   
